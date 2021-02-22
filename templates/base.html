@@ -1,0 +1,20 @@
+{% block html %}
+<!DOCTYPE html>
+<html {% block html_tag_attributes %}{% endblock %}>
+  <head>
+    {% block head %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="http://localhostL:8080/favicon.ico">
+    <title>frontend</title>
+    {% endblock %}
+  <body>
+
+    {% block body %}
+        {% block content %}{% endblock %}
+    {% endblock %}
+    <!-- built files will be auto injected -->
+  <script type="text/javascript" src="http://localhostL:8080/js/chunk-vendors.js"></script><script type="text/javascript" src="http://localhostL:8080/js/app.js"></script></body>
+</html>
+{% endblock %}
